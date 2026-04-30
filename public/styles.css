@@ -1,0 +1,119 @@
+/* Modern, clean, and responsive styles for Azure Demo Web App */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(120deg, #f0f4f8 0%, #e6ecf3 100%);
+	color: #222;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	background: linear-gradient(90deg, #0078d4 60%, #005a9e 100%);
+	color: #fff;
+	padding: 24px 40px;
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+header .logo {
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+header .tagline {
+	font-size: 15px;
+	opacity: 0.85;
+}
+nav {
+	background-color: #005a9e;
+	display: flex;
+	gap: 4px;
+	padding: 0 40px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 14px 22px;
+	font-size: 15px;
+	border-radius: 4px 4px 0 0;
+	transition: background 0.2s, color 0.2s;
+}
+nav a:hover,
+nav a.active {
+	background: #003f72;
+	color: #fff;
+}
+main {
+	flex: 1;
+	padding: 48px 24px 24px 24px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.hero {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+	padding: 40px 32px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+.hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 18px;
+	color: #0078d4;
+}
+.hero p {
+	font-size: 1.2rem;
+	margin-bottom: 18px;
+}
+.btn {
+	display: inline-block;
+	background: #0078d4;
+	color: #fff;
+	padding: 12px 28px;
+	border-radius: 6px;
+	font-size: 1rem;
+	text-decoration: none;
+	margin-top: 10px;
+	transition: background 0.2s;
+}
+.btn:hover {
+	background: #005a9e;
+}
+.cards {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card {
+	background: #f8fafc;
+	border-radius: 10px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+	padding: 28px 22px;
+	width: 240px;
+	text-align: center;
+}
+.card .icon {
+	font-size: 2.2rem;
+	margin-bottom: 10px;
+	color: #0078d4;
+}
+@media (max-width: 700px) {
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	main {
+		padding: 24px 4px;
+	}
+	.hero {
+		padding: 24px 8px;
+	}
+}

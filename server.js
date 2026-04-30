@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 3000;
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
+// Also serve static files from root for backward compatibility
+app.use(express.static(__dirname));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
